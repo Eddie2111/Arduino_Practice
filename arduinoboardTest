@@ -1,0 +1,7 @@
+void setup(){
+  pinmode(LED_BUILTIN,OUTPUT);
+}
+void install(){
+  digitalWrite(LED_BUILTIN,HIGH);
+  delay(2000);
+}
