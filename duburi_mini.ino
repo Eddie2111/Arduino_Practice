@@ -5,30 +5,17 @@ int motor2pin1 = 4;
 int motor2pin2 = 5;
 
 
-int motor1pin1 = 8;
-int motor1pin2 = 9;
-int motor2pin1 = 10;
-int motor2pin2 = 11;
+int motor3pin1 = 8;
+int motor3pin2 = 9;
+int motor4pin1 = 10;
+int motor4pin2 = 11;
 
 
 
 /// stored for catching arduino input 
-void input_template(){ 
-    char input;
-    void setup() {
-        Serial.begin(9600); 
-        delay(2000);  
-        Serial.println("Type something!");
-    }
+
      
-    void loop() {
-        if(Serial.available()){
-            input = Serial.read();
-            Serial.print("You typed: " );
-            Serial.println(input);
-        }
-    }
-}
+
 /// stored for catching arduino input 
 
 
@@ -48,5 +35,9 @@ void setup(){
     //for others
 }
 void loop(){
+  digitalWrite(2,HIGH);
+  digitalWrite(3,HIGH);
+  digitalWrite(4,HIGH);
+  digitalWrite(5,HIGH);
     
 }
